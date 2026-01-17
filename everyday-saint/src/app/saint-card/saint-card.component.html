@@ -1,0 +1,32 @@
+<article class="saint-card" *ngIf="saint">
+  <header class="saint-card__header">
+    <h1 class="saint-card__name">{{ saint.name }}</h1>
+    <p class="saint-card__date">{{ getFormattedDate() }}</p>
+    <p class="saint-card__rank">{{ getFormattedRank() }}</p>
+  </header>
+
+  <section class="saint-card__section">
+    <h2 class="saint-card__section-title">Life Summary</h2>
+    <p class="saint-card__text">{{ saint.life_summary }}</p>
+  </section>
+
+  <section class="saint-card__section">
+    <h2 class="saint-card__section-title">Key Life Events</h2>
+    <ul class="saint-card__list">
+      <li *ngFor="let event of saint.key_life_events" class="saint-card__list-item">
+        {{ event }}
+      </li>
+    </ul>
+  </section>
+
+  <section class="saint-card__section">
+    <h2 class="saint-card__section-title">Path to Sainthood</h2>
+    <p class="saint-card__text">{{ saint.path_to_sainthood }}</p>
+  </section>
+
+  <footer class="saint-card__footer">
+    <p class="saint-card__source">
+      <em>Source: {{ saint.source_reference }}</em>
+    </p>
+  </footer>
+</article>

@@ -1,0 +1,99 @@
+.saint-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.saint-card__header {
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #8b4513;
+  padding-bottom: 1rem;
+}
+
+.saint-card__name {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.saint-card__date {
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  margin: 0.25rem 0;
+}
+
+.saint-card__rank {
+  font-size: 1rem;
+  color: #8b4513;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.5rem 0 0 0;
+}
+
+.saint-card__section {
+  margin-bottom: 2rem;
+}
+
+.saint-card__section-title {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  border-left: 4px solid #8b4513;
+  padding-left: 1rem;
+}
+
+.saint-card__text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  margin: 0;
+  text-align: justify;
+}
+
+.saint-card__list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.saint-card__list-item {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.saint-card__footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.saint-card__source {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .saint-card {
+    padding: 1.5rem;
+  }
+
+  .saint-card__name {
+    font-size: 2rem;
+  }
+
+  .saint-card__section-title {
+    font-size: 1.25rem;
+  }
+}
